@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Message alignment */
+.dm-message-row {
+  width: 100%;
+  display: flex;
+  margin: 8px 0;
+}
+
+/* Your messages → right */
+.dm-message-row.me {
+  justify-content: flex-end;
+}
+
+/* Other messages → left */
+.dm-message-row.other {
+  justify-content: flex-start;
+}
+
+/* Bubble styling */
+.dm-bubble {
+  max-width: 60%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+/* Your bubble */
+.mine-bubble {
+  background: #a76eff;
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+/* Others’ bubble */
+.other-bubble {
+  background: #2a2d3a;
+  color: white;
+  border-bottom-left-radius: 4px;
+}
